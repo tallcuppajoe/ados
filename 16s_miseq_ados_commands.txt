@@ -148,7 +148,7 @@ summary.seqs(fasta=D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.f
 	#Expect a significant drop in the number of unique sequences. The total number of sequences should be unchanged.
 
 
-chimera.uchime(fasta=D:\ados\data\16S\process\ados.stability.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.count_table, dereplicate=t, processors=1)
+chimera.uchime(fasta=D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.count_table, dereplicate=t, processors=1)
 
 	#Chimeras are generated in the PCR step and are removed from our sequences using uchime
 	#Only one processor is used (it's the default) because this step caused mothur to close unexpectedly on occassion.
