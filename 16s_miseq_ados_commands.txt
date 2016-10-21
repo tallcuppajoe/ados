@@ -160,7 +160,7 @@ remove.seqs(fasta=D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.fi
 	#The chimeras are removed and the number of sequences removed will be reported.
 	
 
-summary.seqs(fasta=D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=D:\ados\data\16S\process\ados.stability.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.count_table)
+summary.seqs(fasta=D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.count_table)
 
 	#The change in sequences after removal of chimeras should be noted.
 
