@@ -40,30 +40,30 @@ summary.seqs(fasta=D:\ados\data\16S\process\ados.stability.trim.contigs.fasta)
 	#This is the first look at the sequences and should be in a range that is expected. In this case just over 250 bp.
 
 
-screen.seqs(fasta=D:\ados\data\16S\process\ados.stability.trim.contigs.fasta, group=D:\ados\data\16S\process\ados.stability.contigs.groups, maxambig=0, maxlength=275)
+screen.seqs(fasta=D:\ados\data\16S\process\ados.trim.contigs.fasta, group=D:\ados\data\16S\process\ados.contigs.groups, maxambig=0, maxlength=275)
 
 	#Keeps sequences that fulfill uder defined criteria. Files that don't fit what was expected were removed.
 	#Note - the maxlength will change based on the results of the summary.seqs above. In this case 275 was a reasonable cut-off. Anything larger was removed.
 	#Sequences with any ambiguous bases were removed.
 
 
-summary.seqs(fasta=D:\ados\data\16S\process\ados.stability.trim.contigs.good.fasta)
+summary.seqs(fasta=D:\ados\data\16S\process\ados.trim.contigs.good.fasta)
 
 	#This summary reflects the removal of the sequences.
 
 
-unique.seqs(fasta=D:\ados\data\16S\process\ados.stability.trim.contigs.good.fasta)
+unique.seqs(fasta=D:\ados\data\16S\process\ados.trim.contigs.good.fasta)
 
 	#Returns only the unique sequences fround in the fasta and reports the total number of sequences followed by the number of uniques sequences.
 
 
-count.seqs(name=D:\ados\data\16S\process\ados.stability.trim.contigs.good.names, group=D:\ados\data\16S\process\ados.stability.contigs.good.groups)
+count.seqs(name=D:\ados\data\16S\process\ados.trim.contigs.good.names, group=D:\ados\data\16S\process\ados.contigs.good.groups)
 	
 	#Counts the number of sequences represented by the representative sequence in a name file.
 	#This command uses the same output files (from screen.seqs) as the previous step.
 
 
-summary.seqs(fasta=D:\ados\data\16S\process\ados.stability.trim.contigs.good.unique.fasta, count=D:\ados\data\16S\process\ados.stability.trim.contigs.good.count_table)
+summary.seqs(fasta=D:\ados\data\16S\process\ados.trim.contigs.good.unique.fasta, count=D:\ados\data\16S\process\ados.trim.contigs.good.count_table)
 
 	#This summary is nearly identical to the one above, but now the number of unique sequences is included.
 
