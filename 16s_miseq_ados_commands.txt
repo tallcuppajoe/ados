@@ -99,7 +99,7 @@ align.seqs(fasta=D:\ados\data\16S\process\ados.trim.contigs.good.unique.fasta, r
 	#Three processors are used because it was specified above
 
 
-summary.seqs(fasta=D:\ados\data\16S\process\ados.trim.contigs.good.unique.align, count=D:\ados\data\16S\process\ados.stability.trim.contigs.good.count_table)
+summary.seqs(fasta=D:\ados\data\16S\process\ados.trim.contigs.good.unique.align, count=D:\ados\data\16S\process\ados.trim.contigs.good.count_table)
 
 	
 	#The start and end should have changed from before to align with the Silva V4 16S.
