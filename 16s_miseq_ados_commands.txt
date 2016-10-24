@@ -7,7 +7,7 @@
 	#For the purposes of this file, the assumption is that this is being run on a local PC.
 	#When using this script in the mothur Amazon Machine Instance (AMI) follow the instructions found on http://mothur.org/wiki/Mothur_AMI
 	#The tmux program should be used if using the AMI so that if the local machine gets disconnected the processes don't stop on the EC2 instance.
-	#Also, if using the AMI, note that "\" becomes "/" and the tutorial data in the raw folder shoudl be replaced with the data of interest.
+	#Also, if using the AMI, note that "\" becomes "/" and the tutorial data in the raw folder should be replaced with the data of interest.
 	#The /data/process folder may need to be created or one can follow Pat's lead and output directly in the data/mothur folder.
 	#Most questions can be answered at http://www.mothur.org/wiki/Main_Page.
 	#Much of the language in the comments in this document comes directly from the mothur wiki.
