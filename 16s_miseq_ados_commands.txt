@@ -241,7 +241,7 @@ classify.otu(list=D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.fi
 	#Rename the files to less unweildy names.
 	
 system(rename D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.shared ados.an.shared)
-system(rename D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.0.03.cons.taxonomy ados.stability.an.cons.taxonomy)
+system(rename D:\ados\data\16S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.0.03.cons.taxonomy ados.an.cons.taxonomy)
 
 
 	#The following commands are for further analysis within mothur, primarily looking at alpha diversity.
