@@ -34,6 +34,7 @@ make.contigs(file=D:\ados\data\16S\raw\ados.stability.files, inputdir=D:\ados\da
 	#This is the first QA check to be sure that all expected samples are present.
 	#Using 3 of 4 available processors.
 
+set.dir(output=D:\ados\data\16S\process)
 
 summary.seqs(fasta=D:\ados\data\16S\process\ados.stability.trim.contigs.fasta)
 
