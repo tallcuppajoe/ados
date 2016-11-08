@@ -239,14 +239,13 @@ cluster.split(fasta=D:\ados\data\18S\process\ados_18S.trim.contigs.good.unique.g
 	#The taxlevel of 4 corresponds to Order.
 
 
-make.shared(list=D:\ados\data\18S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.list, count=D:\ados\data\18S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.pick.count_table, label=0.03)
+make.shared(list=D:\ados\data\18S\process\ados_18S.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.list, count=D:\ados\data\18S\process\ados_18S.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.pick.count_table, label=0.03)
 
 	#Shared file includes the number of sequences in each OTU from each group.
 	#The 97% similarity is chosen (0.03 cutoff).
 
 
-classify.otu(list=D:\ados\data\18S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.list, count=D:\ados\data\18S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.pick.count_table, taxonomy=D:\ados\data\18S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.pick.pds.wang.pick.pick.taxonomy, label=0.03)
-
+classify.otu(list=D:\ados\data\18S\process\ados_18S.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.list, count=D:\ados\data\18S\process\ados_18S.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.pick.count_table, taxonomy=D:\ados\data\18S\process\ados_18S.trim.contigs.good.unique.good.filter.unique.precluster.pick.nr_v123.wang.pick.pick.taxonomy, label=0.03)
 	#Consensus taxonomy for each OTU.
 	#Taxonomy file reports number of times an OTU was observed and the percent that were classified to the Genus displayed.
 
@@ -254,30 +253,30 @@ classify.otu(list=D:\ados\data\18S\process\ados.trim.contigs.good.unique.good.fi
 	#Rename the files to less unweildy names.
 
 
-system(rename D:\ados\data\18S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.shared ados.an.shared)
-system(rename D:\ados\data\18S\process\ados.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.0.03.cons.taxonomy ados.an.cons.taxonomy)
+system(rename D:\ados\data\18S\process\ados_18S.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.shared ados_18S.an.shared)
+system(rename D:\ados\data\18S\process\ados_18S.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.pick.an.unique_list.0.03.cons.taxonomy ados_18S.an.cons.taxonomy)
 
 	#The following commands are for further analysis within mothur, primarily looking at alpha diversity.
 
 
-count.groups(shared=D:\ados\data\18S\process\ados.an.shared)
+count.groups(shared=D:\ados\data\18S\process\ados_18S.an.shared)
 
 	#Reports the number of sequences per sample.
 
 
-sub.sample(shared=D:\ados\data\18S\process\ados.an.shared, size=2439)
+sub.sample(shared=D:\ados\data\18S\process\ados_18S.an.shared, size=5860)
 
 	#Rarefies to the sample with the smallest number of sequences. 
 	#This value will change depending on the output of count.groups, so the number 2439 will change.
 	#Use this rarefied shared file for further analysis.
 
 
-rarefaction.single(shared=D:\ados\data\18S\process\ados.an.shared, calc=sobs, freq=100)
+rarefaction.single(shared=D:\ados\data\18S\process\ados_18S.an.shared, calc=sobs, freq=100)
 
 	#This provides the first look at alpha diversity by generating a rarefaction curve describing OTU as a function of sampling effort.
 
 
-summary.single(shared=D:\ados\data\18S\process\ados.an.shared, calc=nseqs-coverage-sobs-invsimpson, subsample=T)
+summary.single(shared=D:\ados\data\18S\process\ados_18S.an.shared, calc=nseqs-coverage-sobs-invsimpson, subsample=T)
 
 	#Generates a table with sequence number, coverage, OTU number, and inverse simpson diversity. 
 	#Subsample=T tells the command to use the size of the smallest library. 
